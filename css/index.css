@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat';
 }
 span {
   font-weight: 800;
@@ -14,7 +15,6 @@ span {
 a {
   text-decoration: none;
   color: inherit;
-  font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
 }
 .landing-page {
@@ -42,7 +42,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 75px;
 }
 .left .fl {
   font-family: 'Montserrat';
@@ -51,6 +50,10 @@ a {
   text-transform: uppercase;
   color: #0abde3;
   letter-spacing: -1.5px;
+  animation-delay: .75s;
+}
+.left h1, .left p, .left a {
+  margin-left: 75px;
 }
 .left .headline {
   font-family: Arial, Helvetica, sans-serif;
@@ -59,7 +62,7 @@ a {
   font-weight: 400;
   font-size: 1.15rem;
   color: #2c3e50;
-  opacity: .8;
+  opacity:.8;
 }
 /* RIGHT STYLING */
 .right {
@@ -135,4 +138,41 @@ a {
   color: #ecf0f1;
   background-color: #2c3e50;
 }
-/* TEST */
+/* BOTTOM PORTION */
+.info {
+  display:flex;
+}
+.info-left {
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #ecf0f1;
+}
+.info-left i {
+  font-size: 125px;
+  color: #0abde3;
+}
+.info-left hr {
+  width:35%;
+  border: 4px solid #2c3e50;
+  border-radius: 15px;
+  margin:25px;
+}
+.info-left p {
+  width: 50%;
+  text-align: center;
+  padding:25px;
+  color: #2c3e50;
+  letter-spacing: .75;
+}
+.info-right {
+  flex:1;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/daniel-mccullough--FPFq_trr2Y-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
