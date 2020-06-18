@@ -25,6 +25,10 @@
   font-size: 40px;
   color: #0abde3;
   cursor: pointer;
+  transition: .3s color;
+}
+.top-greet i:hover {
+  color: #5fd9f5;
 }
 .top-greet h1 {
   font-family: 'Montserrat';
