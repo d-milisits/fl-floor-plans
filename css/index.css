@@ -121,6 +121,7 @@ a {
   transform: translate(30px, -30px) rotate(-20deg) skew(20deg);
   opacity: .4;
 }
+
 .container img {
   opacity: 0;
 }

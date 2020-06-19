@@ -53,7 +53,7 @@ a {
   opacity: 0;
 }
 .top-greet h1 {
-  animation: transitionIn 3.5s 1.5s forwards;
+  animation: transitionIn 3.5s 2.25s forwards;
 }
 .top-greet hr {
   width: 25%;
@@ -67,7 +67,7 @@ a {
   opacity: 0;
 }
 .top-greet p {
-  animation: transitionIn 3.5s 2.25s forwards;
+  animation: transitionIn 3.5s 3s forwards;
 }
 /* INFO STYLING */
 .info-box {
@@ -91,7 +91,7 @@ a {
   animation-delay: .75s;
 }
 .two {
-  animation-delay: 1s;
+  animation-delay: 1.25s;
 }
 .info h1 {
   font-family: 'Montserrat';
