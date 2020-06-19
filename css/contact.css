@@ -1,0 +1,22 @@
+* {
+  margin:0;
+  padding:0;
+}
+.contact-page {
+  position:relative;
+  height:100vh;
+  width:100vw;
+  background: linear-gradient(to right bottom, #ecf0f1 50%, #2c3e50 50%);
+}
+.contact-page i {
+  position:absolute;
+  top:8%;
+  left: 5%;
+  font-size: 55px;
+  color: #0abde3;
+  cursor: pointer;
+  transition: .2s color;
+}
+.contact-page i:hover {
+  color: #2c3e50;
+}
