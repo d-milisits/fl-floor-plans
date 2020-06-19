@@ -23,7 +23,24 @@
   font-weight: 600;
   color: #32d5fa;
 }
+.footer p {
+  color: #ecf0f1;
+}
 .footer a:hover {
   transition: color .3s;
   color: rgb(106, 228, 255);
+}
+/* LIGHT STYLING */
+.light {
+  background-color: #dfe6e9;
+}
+.light a {
+  color: #2c3e50;
+}
+.light a:hover {
+  color: #32d5fa;
+
+}
+.light p {
+  color: #2c3e50;
 }
