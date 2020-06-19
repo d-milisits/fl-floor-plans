@@ -157,7 +157,7 @@ a {
   background-color: #ecf0f1;
 }
 .info-left i {
-  font-size: 125px;
+  font-size: 100px;
   color: #0abde3;
 }
 .info-left hr {
@@ -167,11 +167,20 @@ a {
   margin:25px;
 }
 .info-left p {
-  width: 50%;
+  width: 60%;
   text-align: center;
   padding:25px;
   color: #2c3e50;
   letter-spacing: .75;
+}
+.info-left .btn {
+  background-color: #2c3e50;
+  color: white;
+}
+.info-left .btn:hover {
+  border-color: #0abde3;
+  color: #0abde3;
+  background-color: #ecf0f1;
 }
 .info-right {
   flex:1;
