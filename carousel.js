@@ -42,12 +42,21 @@
       
         for(var i = 0; i < items.length; i++) {
             let item = items[i],
-                box = item.getElementsByClassName('item__3d-frame')[0];
-            if(i == (index - 1)) {
+            box = item.getElementsByClassName('item__3d-frame')[0];
+            if (i == index - 2){
+                box.removeEventListener('mouseenter', clearTimer);
+                box.removeEventListener('mouseleave', timer);
+            }
+            if(i == index - 1) {
                 item.classList.add('carousel__slider__item--active');
-                box.style.transform = "perspective(1200px)"; 
+                box.style.transform = "perspective(1200px)";
+                box.addEventListener('mouseenter', clearTimer);
+                box.addEventListener('mouseleave', timer);
+            } else if (i > index - 1) {
+                item.classList.remove('carousel__slider__item--active');
+                box.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
             } else {
-              item.classList.remove('carousel__slider__item--active');
+                item.classList.remove('carousel__slider__item--active');
                 box.style.transform = "perspective(1200px) rotateY(" + (i < (index - 1) ? 40 : -40) + "deg)";
             }
         }
@@ -61,34 +70,25 @@
           move(++currIndex);
         }, intervalTime);    
     }
+
+    function clearTimer(){
+        clearInterval(interval);
+    }
     
     function prev() {
       move(--currIndex);
-      timer();
     }
     
     function next() {
       move(++currIndex);    
-      timer();
     }
-    
     
     function bindEvents() {
         window.onresize = resize;
         prevBtn.addEventListener('click', () => { prev(); });
         nextBtn.addEventListener('click', () => { next(); });    
     }
-  
-  
-    carousel.addEventListener('mouseenter', function() {
-        clearInterval(interval);
-      });
-      
-      carousel.addEventListener('mouseleave', function() {
-          timer();
-      });
-  
-    
+
     init();
     
   })();
