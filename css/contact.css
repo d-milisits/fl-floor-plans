@@ -5,9 +5,15 @@
 }
 .contact-page {
   position:relative;
-  height:100vh;
+  min-height:100vh;
   width:100vw;
-  background: linear-gradient(to right bottom, #ecf0f1 50%, #2c3e50 50%);
+  background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('../img/contactimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-page i {
   position:absolute;
@@ -19,27 +25,23 @@
   transition: .2s color;
 }
 .contact-page i:hover {
-  color: #2c3e50;
+  color: #ecf0f1;
 }
 .group-div {
-  position: absolute;
-  bottom: 10%;
-  right: 10%;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2c3e50;
-  padding:15px;
-}
+  background-color: #ecf0f1;
+  padding:100px;
+  box-shadow: 10px 10px 25px rgb(0, 0, 0);}
 .group-div h1 {
   text-transform: uppercase;
   font-size: 3rem;
   text-align: center;
   padding-bottom: 40px;
   letter-spacing: -2px;
-  color: #ecf0f1;
-  text-shadow: 4.5px 4.5px 8px #2e2e2e;
+  color: #2c3e50;
 }
 /* INPUT STYLING */
     .group { 
@@ -52,13 +54,13 @@
       display:block;
       width:300px;
       border:none;
-      border-bottom:1px solid #ecf0f1;
-      background-color: #2c3e50;
+      border-bottom:1px solid #2c3e50;
+      background-color: #ecf0f1;
     }
     input:focus 		{ outline:none; }
     /* LABEL ======================================= */
     label {
-      color:white; 
+      color:#2c3e50; 
       font-size:14px;
       text-transform: uppercase;
       font-weight:normal;
@@ -74,7 +76,7 @@
     input:focus ~ label, input:valid ~ label 		{
       top:-20px;
       font-size:14px;
-      color:#0abde3;
+      color:#2c3e50;
     }
     /* BOTTOM BARS ================================= */
     .bar 	{ position:relative; display:block; width:300px; }
@@ -84,7 +86,7 @@
       width:0;
       bottom:1px; 
       position:absolute;
-      background:#0abde3; 
+      background:#2c3e50; 
       transition:0.2s ease all; 
       -moz-transition:0.2s ease all; 
       -webkit-transition:0.2s ease all;
@@ -118,15 +120,15 @@
 
     /* ANIMATIONS ================ */
     @-webkit-keyframes inputHighlighter {
-      from { background:#0abde3; }
+      from { background:#2c3e50; }
       to 	{ width:0; background:transparent; }
     }
     @-moz-keyframes inputHighlighter {
-      from { background:#0abde3; }
+      from { background:#2c3e50; }
       to 	{ width:0; background:transparent; }
     }
     @keyframes inputHighlighter {
-      from { background:#0abde3; }
+      from { background:#2c3e50; }
       to 	{ width:0; background:transparent; }
     }
 /* BUTTON STYLING */
@@ -143,7 +145,7 @@
 .btn:hover {
   transition: .25s all ease;
   font-weight: 400;
-  color: #ecf0f1;
-  border: 1px solid #ecf0f1;
-  background-color: #2c3e50;
+  color: #2c3e50;
+  border: 1px solid #2c3e50;
+  background-color: #ecf0f1;
 }
