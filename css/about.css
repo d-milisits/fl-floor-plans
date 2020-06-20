@@ -50,10 +50,6 @@ a {
   color: #dfe6e9;
   letter-spacing: -1.5px;
   text-shadow: 3.5px 3.5px 8px #2e2e2e;
-  opacity: 0;
-}
-.top-greet h1 {
-  animation: transitionIn 3.5s 2.25s forwards;
 }
 .top-greet hr {
   width: 25%;
@@ -64,10 +60,6 @@ a {
   color: whitesmoke;
   letter-spacing: 1px;
   padding:15px;
-  opacity: 0;
-}
-.top-greet p {
-  animation: transitionIn 3.5s 3s forwards;
 }
 /* INFO STYLING */
 .info-box {
@@ -92,6 +84,9 @@ a {
 }
 .two {
   animation-delay: 1.25s;
+}
+.cta {
+  animation-delay: 1.65s;
 }
 .info h1 {
   font-family: 'Montserrat';
