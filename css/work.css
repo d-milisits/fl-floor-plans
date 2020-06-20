@@ -1,12 +1,15 @@
+* {
+  padding:0;
+  margin:0;
+}
 :root {
     --crsl-bg: transparent;
-    --box-bg: #2c3e50;
+    --box-bg: #B5C6CE;
     --box-shadow: #0000001c;
     --box-shadow-border: #0000000f;
-    --box-border: #000000;
+    --box-border: #2c3e50;
     --title-text: #0abde3;
   }
-  
   /*
   2c3e50
   dfe6e9
@@ -20,13 +23,7 @@
     margin: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, #dfe6e9 50%, #FFFFFF 50%);;
-
-    /* background: #2f3539;
-    background: -moz-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-    background: -webkit-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-    background: radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539",endColorstr="#1e272e",GradientType=1); */
+    background-color: #dfe6e9;
   }
   html *, body * {
     font-family: 'Montserrat', sans-serif;
@@ -43,32 +40,62 @@
     color: white;
     user-select: none;
   }
-  /* html > .carousel, body > .carousel {
-    padding-top: 125px;
-  } */
-
-  .fl {
-    font-weight: 800;
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: var(--title-text);
-    letter-spacing: -1.5px;
-    animation-delay: .75s;
-  }
-
-  .fa {
-    font-weight: 800;
-    font-size: 5rem;
-    text-transform: uppercase;
-    color: var(--title-text);
-    letter-spacing: -1.5px;
-    animation-delay: .75s;
-  }
-
+/* TOPNAV */
+.top-greet {
+  background-color: #2c3e50;
+  width: 100vw;
+  height:200px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+}
+.top-greet i {
+  position:absolute;
+  top:38%;
+  left: 3%;
+  font-size: 40px;
+  color: #0abde3;
+  cursor: pointer;
+  transition: .3s color;
+}
+.top-greet i:hover {
+  color: #5fd9f5;
+}
+.top-greet h1 {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  color: #dfe6e9;
+  letter-spacing: -1.5px;
+  text-shadow: 3.5px 3.5px 8px #2e2e2e;
+}
+.top-greet hr {
+  width: 25%;
+  border: 2px solid #0abde3;
+}
+.top-greet p {
+  font-family: 'Montserrat';
+  color: whitesmoke;
+  letter-spacing: 1px;
+  padding:15px;
+}
+/* PAGE */
   .fa:hover {
-    color: var(--box-bg);
+    color: #0abde3; 
   }
-  
+  .carousel__body .carousel__prev i, .carousel__body .carousel__next i {
+    font-size: 4.5rem;
+    transition: color .2s;
+    font-weight: 800;
+    cursor: pointer;
+    color: var(--box-border);
+  }
+  .carousel__body .carousel__prev i:hover, .carousel__body .carousel__next i:hover {
+    color: #0abde3; 
+  }
   .carousel {
     position: relative;
     display: block;
@@ -78,16 +105,7 @@
   .carousel__prev, .carousel__next {
     position: absolute;
     bottom: -15%;
-    transition: transform 0.25s ease;
-  }
-  .carousel__prev i, .carousel__next i {
-    font-size: 60px;
-    color: var(--title-text);
-    cursor: pointer;
-  }
-  .carousel__prev:hover, .carousel__next:hover {
-    transform: scale(1.25);
-    color: var(--box-bg);
+    transition: 0.25s ease;
   }
   .carousel__prev {
     left: 40%;
@@ -97,8 +115,8 @@
   }
   .carousel__body {
     width: 100%;
-    padding-top: 3%;
-    padding-bottom: 4%;
+    padding-top: 2.5%;
+    padding-bottom: 1%;
     overflow: hidden;
   }
   .carousel__body .carousel__slider {
@@ -116,11 +134,26 @@
   }
   .carousel__body .carousel__slider__item .item__3d-frame {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 80%;
     transition: transform 1s ease-in-out;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+  }
+  .carousel__body .carousel__slider__item:nth-child(1) .item__3d-frame img {
+    height: 90%;
+    width: 95%;
+    margin:auto;
+  }
+  .carousel__body .carousel__slider__item:nth-child(2) .item__3d-frame img {
+    height: 90%;
+    width: 85%;
+    margin:auto;
+  }
+  .carousel__body .carousel__slider__item:nth-child(3) .item__3d-frame img {
+    height: 90%;
+    width: 80%;
+    margin:auto;
   }
   .carousel__body .carousel__slider__item .item__3d-frame:after {
     content: '';
@@ -129,7 +162,7 @@
     width: 100%;
     height: 40px;
     background: var(--box-shadow);
-    box-shadow: 0px 0px 5px 5px var(--box-shadow);
+    box-shadow: 0px 0px 25px 15px var(--box-shadow);
     transform: rotateX(90deg) translate3d(0px, -20px, 0px);
     opacity: 0.85;
   }
