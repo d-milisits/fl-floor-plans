@@ -39,8 +39,11 @@
   text-transform: uppercase;
   font-size: 3rem;
   text-align: center;
-  padding-bottom: 40px;
   letter-spacing: -2px;
+  color: #2c3e50;
+}
+.group-div p {
+  padding-bottom: 40px;
   color: #2c3e50;
 }
 /* INPUT STYLING */
@@ -137,7 +140,7 @@
   from {opacity: 0;}
   to {opacity: 1;}
 }
-.group-div, .one, .two, .three, .btn {
+.group-div, .one, .two, .three {
   opacity: 0;
 }
 .group-div {
@@ -153,7 +156,7 @@
   animation: transitionIn 3.5s 1.7s forwards;
 }
 .btn {
-  animation: transitionIn 3.5s 2.05s forwards;
+  animation-delay: 2.5s;
 }
 /* BUTTON STYLING */
 .btn {

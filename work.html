@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/work.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='icon' type='image/p' href='img/FL Logo.png' />
@@ -26,7 +27,7 @@
           <div class="carousel__slider__item">
             <div class="item__3d-frame">
               <div class="item__3d-frame__box item__3d-frame__box--front">
-                <img src="./img/design1-copy.png" alt="RM">
+                <img src="./img/design2.png" alt="RM">
               </div>
               <div class="item__3d-frame__box item__3d-frame__box--left"></div>
               <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
@@ -35,7 +36,7 @@
           <div class="carousel__slider__item">
             <div class="item__3d-frame">
               <div class="item__3d-frame__box item__3d-frame__box--front">
-                <img src="./img/design2.png" alt="RM">
+                <img src="./img/design1-copy.png" alt="RM">
               </div>
               <div class="item__3d-frame__box item__3d-frame__box--left"></div>
               <div class="item__3d-frame__box item__3d-frame__box--right">             </div>
@@ -57,14 +58,20 @@
     </div>
     <div class=partner-box>
       <div class="partner-left">
-          <img class="one" src="img/0.png"/>
-          <img class="two" src="img/1.png"/>
-          <img class="three" src="img/2.png"/>
-          <img class="four" src="img/3.png"/>
-          <img class="five" src="img/4.png"/>
+        <h1>SOME OF OUR CLIENTS:</h1>
+          <img data-aos="fade-right" data-aos-duration="1000" class="one" src="img/0.png"/>
+          <img data-aos="fade-right" data-aos-duration="1000" class="two" src="img/1.png"/>
+          <img data-aos="fade-right" data-aos-duration="1000" class="three" src="img/2.png"/>
+          <img data-aos="fade-right" data-aos-duration="1000" class="four" src="img/3.png"/>
+          <img data-aos="fade-right" data-aos-duration="1000" class="five" src="img/4.png"/>
       </div>
       <div class="partner-right">
-        <p>hi</p>
+        <i class="fa fa-clipboard" aria-hidden="true"></i>
+        <hr>
+        <div class="para">
+          <p>FL Floor Plans was founded to fill the need for an unbiased measuring company. Those in the industry know companies will often inflate square footage numbers to add extra profit margin to a job. With few alternatives available, developers, contractors, realtors and home owners are forced to use biased services to measure properties, ultimately being overcharged for projects.</p>
+          <p>FL Floor Plans was created with customer needs in mind, as we don't party with any flooring installation service or flooring providers. We began our measuring service in 2016 and measure everything single room jobs to entire properties. Have peace of mind knowing you're receiving the best measuring service available to you.</p>
+        </div>
       </div>
     </div>
     <div class="footer light">
@@ -78,5 +85,6 @@
       </div>
     </div>
       <script src='carousel.js'></script>    
+      <script>AOS.init();</script>
   </body>
 </html>

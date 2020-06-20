@@ -1,6 +1,7 @@
 * {
   padding:0;
   margin:0;
+  font-family: 'Montserrat';
 }
 :root {
     --crsl-bg: transparent;
@@ -98,7 +99,7 @@
   }
   .carousel__prev, .carousel__next {
     position: absolute;
-    bottom: -15%;
+    bottom: -5%;
     transition: 0.25s ease;
   }
   .carousel__prev {
@@ -134,12 +135,12 @@
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
   }
-  .carousel__body .carousel__slider__item:nth-child(1) .item__3d-frame img {
+  .carousel__body .carousel__slider__item:nth-child(2) .item__3d-frame img {
     height: 90%;
-    width: 95%;
+    width: 85%;
     margin:auto;
   }
-  .carousel__body .carousel__slider__item:nth-child(2) .item__3d-frame img {
+  .carousel__body .carousel__slider__item:nth-child(1) .item__3d-frame img {
     height: 90%;
     width: 70%;
     margin:auto;
@@ -169,7 +170,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border-color: var(--box-border);
+    border-color: rgba(22, 22, 22, 0.3);
     background: var(--box-bg);
     border-width: 3px;
     border-style: solid;
@@ -199,7 +200,7 @@
   /* PARTNER BOX STYLING */
   .partner-box {
     display:flex;
-    margin-top: 15vh;
+    margin-top: 10vh;
   }
   .partner-left {
     flex:1;
@@ -208,6 +209,13 @@
     justify-content: center;
     align-items: center;
     background-color: var(--box-bg);
+  }
+  .partner-left h1 {
+    padding:25px;
+    margin-top: 40px;
+    color: var(--box-border);
+    font-weight: 800;
+    text-align: center;
   }
   .partner-left .one {
     height: 115px;
@@ -232,6 +240,7 @@
     height: 50px;
     width: 250px;
     padding:25px;
+    margin-bottom:50px;
   }
   .partner-left .partner-row {
     display:flex;
@@ -241,4 +250,58 @@
   .partner-right {
     flex:1;
     background-color: var(--box-border);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
+  .partner-right hr {
+    width:35%;
+    border: 4px solid #0abde3;
+    border-radius: 15px;
+    margin:25px;
+  }
+  .partner-right .para {
+    width: 60%;
+  }
+  .partner-right p {
+    /* width: 60%; */
+    text-align: center;
+    padding:25px;
+    color: #dfe6e9;
+    letter-spacing: .75;
+    font-size: 1.15rem;
+  }
+  .partner-right i {
+    font-size: 100px;
+    color: #dfe6e9;
+  }
+/* CUSTOM SCROLLBAR */
+/* SCROLLBAR STYLE */
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 11.5px;
+}
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #d2dae2;
+  border-radius: 10px;
+}
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #2c3e50;
+  border-radius: 10px;
+}
+/* ANIMATIONS */
+@keyframes transitionIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.carousel__slider {
+  opacity: 0;
+}
+.carousel__slider {
+  animation: transitionIn 3.5s .8s forwards;
+}

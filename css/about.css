@@ -59,11 +59,11 @@ a {
 .info-box {
   width:100vw;
   display:flex;
+  padding: 65px 25px;
 }
 .two-third {
-  flex:2.5;
   display:flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 .info {
@@ -71,7 +71,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px;
+  margin: 25px;
 }
 .one {
   animation-delay: .75s;
@@ -97,13 +97,13 @@ a {
   color: #0abde3;
 }
 .info p {
-  width: 65%;
+  width: 50%;
   text-align: center;
   font-family: 'Montserrat';
   color: #2c3e50;
   letter-spacing: .75px;
   padding:15px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 .cta {
   flex:1;
@@ -127,14 +127,16 @@ a {
 .btn {
   color: #ecf0f1;
   background-color: #0abde3;
+  border: 2px solid #0abde3;
   padding: 13.5px 20px;
-  margin: 50px;
+  margin: 50px 50px 75px 50px;
   letter-spacing: 2px;
 }
 .btn:hover {
   transition: .2s all ease;
   color: #ecf0f1;
   background-color: #2c3e50;
+  border: 2px solid #ecf0f1;
   cursor: pointer;
 }
 /* LOCATION BOX STYLING */
@@ -142,6 +144,7 @@ a {
   display:flex;
 }
 .location-info {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,8 +165,8 @@ a {
   color: #ecf0f1;
   letter-spacing: .75px;
   padding:20px;
-  font-size: 1.1rem;
-}
+  font-size: 1.15rem;
+} 
 .map {
   flex:1;
   overflow:hidden;
@@ -175,4 +178,20 @@ a {
   width:100%;
   height:100%;
   position:absolute;
+}
+/* CUSTOM SCROLLBAR */
+/* SCROLLBAR STYLE */
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 11.5px;
+}
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #d2dae2;
+  border-radius: 10px;
+}
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: #2c3e50;
+  border-radius: 10px;
 }
