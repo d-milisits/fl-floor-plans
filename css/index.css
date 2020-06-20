@@ -196,3 +196,23 @@ a {
   background: #2c3e50;
   border-radius: 10px;
 }
+
+.trans-3 {
+  transform: translate(120px, -120px) rotate(-20deg) skew(20deg);
+  opacity: 1;
+}
+
+.trans-2 {
+  transform: translate(90px, -90px) rotate(-20deg) skew(20deg);
+  opacity: 0.8;
+}
+
+.trans-1 {
+  transform: translate(60px, -60px) rotate(-20deg) skew(20deg);
+  opacity: 0.6;
+}
+
+.trans-0 {
+  transform: translate(30px, -30px) rotate(-20deg) skew(20deg);
+  opacity: 0.4;
+}
