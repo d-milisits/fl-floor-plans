@@ -6,11 +6,6 @@
 span {
   font-weight: 800;
 }
-/* ANIMATIONS */
-@keyframes transitionIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 /* MAIN PAGE */
 a {
   text-decoration: none;
@@ -120,13 +115,6 @@ a {
   /* width: 120%; */
   transform: translate(30px, -30px) rotate(-20deg) skew(20deg);
   opacity: .4;
-}
-
-.container img {
-  opacity: 0;
-}
-.container img {
-  animation: transitionIn 3.5s .5s forwards;
 }
 /* BUTTON STYLING */
 .btn {
