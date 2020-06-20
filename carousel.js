@@ -9,7 +9,8 @@
     
     var width, height, totalWidth, margin = 20,
         currIndex = 0,
-        interval, intervalTime = 4000;
+        interval = 4000,
+        intervalTime = 2000;
     
     function init() {
         resize();
@@ -79,7 +80,13 @@
     }
   
   
-  
+    carousel.addEventListener('mouseenter', function() {
+        clearInterval(interval);
+      });
+      
+      carousel.addEventListener('mouseleave', function() {
+          timer();
+      });
   
     
     init();
