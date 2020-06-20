@@ -1,9 +1,10 @@
 :root {
     --crsl-bg: transparent;
-    --box-bg: #1e272e;
+    --box-bg: #2c3e50;
     --box-shadow: #0000001c;
     --box-shadow-border: #0000000f;
-    --box-border: #fff;
+    --box-border: #000000;
+    --title-text: #0abde3;
   }
   
   /*
@@ -14,17 +15,18 @@
   Off White
   Light Blue
   */
-  
   html, body {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    background: #2f3539;
+    background: linear-gradient(90deg, #dfe6e9 50%, #FFFFFF 50%);;
+
+    /* background: #2f3539;
     background: -moz-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
     background: -webkit-radial-gradient(circle, #2f3539 0%, #1e272e 100%);
     background: radial-gradient(circle, #2f3539 0%, #1e272e 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539",endColorstr="#1e272e",GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f3539",endColorstr="#1e272e",GradientType=1); */
   }
   html *, body * {
     font-family: 'Montserrat', sans-serif;
@@ -41,8 +43,30 @@
     color: white;
     user-select: none;
   }
-  html > .carousel, body > .carousel {
+  /* html > .carousel, body > .carousel {
     padding-top: 125px;
+  } */
+
+  .fl {
+    font-weight: 800;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--title-text);
+    letter-spacing: -1.5px;
+    animation-delay: .75s;
+  }
+
+  .fa {
+    font-weight: 800;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--title-text);
+    letter-spacing: -1.5px;
+    animation-delay: .75s;
+  }
+
+  .fa:hover {
+    color: var(--box-bg);
   }
   
   .carousel {
@@ -58,11 +82,12 @@
   }
   .carousel__prev i, .carousel__next i {
     font-size: 60px;
-    color: var(--box-border);
+    color: var(--title-text);
     cursor: pointer;
   }
   .carousel__prev:hover, .carousel__next:hover {
     transform: scale(1.25);
+    color: var(--box-bg);
   }
   .carousel__prev {
     left: 40%;
@@ -72,8 +97,8 @@
   }
   .carousel__body {
     width: 100%;
-    padding-top: 5%;
-    padding-bottom: 2%;
+    padding-top: 3%;
+    padding-bottom: 4%;
     overflow: hidden;
   }
   .carousel__body .carousel__slider {
