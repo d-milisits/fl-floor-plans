@@ -10,14 +10,11 @@
     --box-border: #2c3e50;
     --title-text: #0abde3;
   }
-  /*
-  2c3e50
-  dfe6e9
-  0abde3
-  Dark blue
-  Off White
-  Light Blue
-  */
+  a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
   html, body {
     padding: 0;
     margin: 0;
@@ -83,9 +80,6 @@
   padding:15px;
 }
 /* PAGE */
-  .fa:hover {
-    color: #0abde3; 
-  }
   .carousel__body .carousel__prev i, .carousel__body .carousel__next i {
     font-size: 4.5rem;
     transition: color .2s;
@@ -108,10 +102,10 @@
     transition: 0.25s ease;
   }
   .carousel__prev {
-    left: 40%;
+    left: 45%;
   }
   .carousel__next {
-    right: 40%;
+    right: 45%;
   }
   .carousel__body {
     width: 100%;
@@ -134,7 +128,7 @@
   }
   .carousel__body .carousel__slider__item .item__3d-frame {
     position: relative;
-    width: 85%;
+    width: 100%;
     height: 80%;
     transition: transform 1s ease-in-out;
     -webkit-transform-style: preserve-3d;
@@ -147,12 +141,12 @@
   }
   .carousel__body .carousel__slider__item:nth-child(2) .item__3d-frame img {
     height: 90%;
-    width: 85%;
+    width: 70%;
     margin:auto;
   }
   .carousel__body .carousel__slider__item:nth-child(3) .item__3d-frame img {
     height: 90%;
-    width: 80%;
+    width: 65%;
     margin:auto;
   }
   .carousel__body .carousel__slider__item .item__3d-frame:after {
@@ -201,10 +195,50 @@
     border-right-width: 5px;
     transform: translate3d(-1px, 0, -40px) rotateY(90deg);
     transform-origin: 100%;
+  }  
+  /* PARTNER BOX STYLING */
+  .partner-box {
+    display:flex;
+    margin-top: 15vh;
   }
-  
-  .far {
-    color: white;
+  .partner-left {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--box-bg);
+  }
+  .partner-left .one {
+    height: 115px;
+    width: 115px;
+    padding: 25px;
+  }
+  .partner-left .two {
+    height: 75px;
+    width: 250px;
+    padding-top: 25px;
+  }
+  .partner-left .three {
     height: 100px;
+    width: 250px;
+    padding-top:25px;
   }
-  
+  .partner-left .four {
+    height: 150px;
+    width: 300px;
+  }
+  .partner-left .five {
+    height: 50px;
+    width: 250px;
+    padding:25px;
+  }
+  .partner-left .partner-row {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .partner-right {
+    flex:1;
+    background-color: var(--box-border);
+  }

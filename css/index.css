@@ -85,10 +85,11 @@ a {
 }
 .right .container {
   position: relative;
-  opacity: .85;
+  opacity: .9;
   /* transition: .5s; */
-  width: 35vw;
-  height: 55vh;
+  width: 36.5vw;
+  height: 56.5vh;
+  margin-right:3%;
 }
 /* IMG STYLING */
 .container img {
