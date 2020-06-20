@@ -9,11 +9,6 @@ a {
   color: inherit;
   text-transform: uppercase;
 }
-/* ANIMATIONS */
-@keyframes transitionIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 /* PAGE */
 .about-page {
   min-height: 100vh;

@@ -131,6 +131,30 @@
       from { background:#2c3e50; }
       to 	{ width:0; background:transparent; }
     }
+/* INPUT TRANSITIONS */
+/* ANIMATIONS */
+@keyframes transitionIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.group-div, .one, .two, .three, .btn {
+  opacity: 0;
+}
+.group-div {
+  animation: transitionIn 3.5s 0.5s forwards;
+}
+.one {
+  animation: transitionIn 3.5s 1s forwards;
+}
+.two {
+  animation: transitionIn 3.5s 1.35s forwards;
+}
+.three {
+  animation: transitionIn 3.5s 1.7s forwards;
+}
+.btn {
+  animation: transitionIn 3.5s 2.05s forwards;
+}
 /* BUTTON STYLING */
 .btn {
   color: #ecf0f1;
