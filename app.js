@@ -17,3 +17,7 @@ element.addEventListener('mouseleave', function() {
         image[i].classList.remove('trans-' + i)
     }
 });
+
+function loadAnimtation() {
+    // setTimeout
+}
