@@ -248,3 +248,136 @@ a {
   transform: translate(30px, -30px) rotate(-20deg) skew(20deg);
   opacity: 0.4;
 }
+.mobile-back {
+  visibility: hidden;
+  transform: rotate(-20deg);
+  opacity: .25;
+  height: auto;
+  width: 55%;
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+/* MOBILE STYLING */
+@media (max-width: 1600px) {
+  .left .fl {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 1240px) {
+  .info-left p {
+    width: 90%;
+    font-size: 1rem;
+  }
+  .right .container img {
+    margin-top: 10%;
+  }
+  .left .fl {
+    font-size: 3.5rem;
+  }
+  .left .headline {
+    font-size: 1rem;
+    width: 70%;
+  }
+  .left h1, .left p, .left a {
+    margin-left: 45px;
+  }
+  .info-left i {
+    font-size: 85px;
+  }
+}
+@media (max-width: 1100px) {
+  .right .container img {
+    margin-top: 17.5%;
+  }
+  .left .fl {
+    font-size: 3rem;
+  }
+  .left .headline {
+    font-size: .9rem;
+  }
+  .btn {
+    padding: 7.5px 15px;
+    font-size: .75rem;
+  }
+}
+@media (max-width: 1000px) {
+  .left {
+    flex:5;
+  }
+  .right {
+    background-color: #dfe6e9;
+  }
+  .right img {
+    visibility: hidden;
+  }
+  .mobile-back {
+    visibility: visible;
+    z-index:100;
+  }
+  .info-left p {
+    width: 100%;
+    padding:2%;
+    font-size: .875rem;
+  }
+}
+@media (max-width: 700px) {
+  .mobile-back {
+    top: 31%;
+    opacity: .2;
+  }
+  .left .fl {
+    font-size: 2.75rem;
+    width: 100%;
+  }
+  .left .headline {
+    font-size: .8rem;
+    width: 100%;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .two {
+    padding-top: 0;
+  }
+  .landing-page .logo {
+    height: 45px;
+    width: 45px;
+  }
+}
+@media (max-width: 550px) {
+  .mobile-back {
+    top: 35%;
+    right: 5%;
+    height: 300px;
+    width: 400px;
+  }
+  .left .fl {
+    font-size: 2.35rem;
+  }
+  .left .headline {
+    font-size: .75rem;
+  }
+  .btn {
+    padding: 5px 12.5px;
+    font-size: .75rem;
+  }
+  .landing-page i {
+    font-size: 1.75rem;
+  }
+}
+@media(max-width: 400px) {
+  .mobile-back {
+    opacity: .1;
+    right:0;
+  }
+  .left .fl {
+    font-size: 2.85rem;
+  }
+  .left h1, .left p, .left a {
+    margin-left: 22.5px;
+  }
+  .right .btn {
+    right: 25px;
+  }
+}
