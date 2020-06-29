@@ -82,7 +82,7 @@
       color:#2c3e50;
     }
     /* BOTTOM BARS ================================= */
-    .bar 	{ position:relative; display:block; width:300px; }
+    .bar 	{ position:relative; display:block; width:100%; }
     .bar:before, .bar:after 	{
       content:'';
       height:2px; 
@@ -175,4 +175,70 @@
   color: #2c3e50;
   border: 1px solid #2c3e50;
   background-color: #ecf0f1;
+}
+/* MOBILE STYLING */
+@media (max-width: 790px) {
+  .contact-page {
+    background-image: none;
+  }
+  .contact-page i {
+    display:none;
+  }
+  .group-div {
+    padding-top:0;
+    padding-bottom:0;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+@media (max-width: 558px) {
+  .group-div h1 {
+    font-size: 2.5rem;
+  }
+  .group-div p {
+    font-size: .9rem;
+  }
+  input {
+    font-size:13px;
+    width:250px;
+  }
+  label {
+    font-size:13px;
+  }
+  input:focus ~ label, input:valid ~ label 		{
+    font-size:13px;
+  }
+  .btn {
+    padding: 8.5px 25px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 490px) {
+  .group-div {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .group-div h1 {
+    font-size: 2.15rem;
+  }
+  .group-div p {
+    font-size: .8rem;
+  }
+  input {
+    font-size:11px;
+    width:240px;
+  }
+  label {
+    font-size:11px;
+  }
+  input:focus ~ label, input:valid ~ label 		{
+    font-size:11px;
+  }
+  .btn {
+    margin-top: 4%;
+    padding: 8px 25px;
+    font-size: .9rem;
+  }
 }
