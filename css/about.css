@@ -199,3 +199,219 @@ a {
   background: #2c3e50;
   border-radius: 10px;
 }
+/* MOBILE STYLING */
+@media (max-width: 1250px) {
+  .top-greet h1 {
+    font-size: 3.25rem;
+  }
+  .info h1 {
+    font-size: 2.5rem;
+  }
+  .info i {
+    font-size: 2.75rem;
+  }
+  .info p {
+    width: 75%;
+    font-size: 1rem;
+  }
+  .cta .circle-logo {
+    height:150px;
+    width: 150px;
+    background-size: 85px 85px;
+  }
+  .location-info i {
+    font-size: 2.75rem;
+  }
+  .location-info p {
+    width: 65%;
+    font-size: 1rem;
+  } 
+  .btn {
+    padding: 10px 20px;
+    font-size: .9rem;
+  }
+}
+@media (max-width: 950px) {
+  .top-greet {
+    height: 150px;
+  }
+  .top-greet i {
+    font-size: 2rem;
+  }
+  .top-greet h1 {
+    font-size: 2.5rem;
+  }
+  .top-greet p {
+    font-size: .85rem;
+  }
+  .info h1 {
+    font-size: 2.25rem;
+  }
+  .info i {
+    font-size: 2.5rem;
+  }
+  .info p {
+    width: 75%;
+    font-size: .9rem;
+  }
+  .cta .circle-logo {
+    height:125px;
+    width: 125px;
+    background-size: 70px 70px;
+  }
+  .location-info i {
+    font-size: 2.5rem;
+  }
+  .location-info p {
+    width: 80%;
+    font-size: .9rem;
+  } 
+  .btn {
+    padding: 9px 18px;
+    font-size: .85rem;
+  }
+}
+@media (max-width: 775px) {
+  .info-box {
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+  }
+  .cta {
+    margin: 5%;
+  }
+  .two-third {
+    flex-direction: column;
+  }
+  .top-greet {
+    height: 140px;
+  }
+  .top-greet h1 {
+    font-size: 2.4rem;
+  }
+  .top-greet p {
+    font-size: .9rem;
+  }
+  .info {
+    max-width: 75%;
+  }
+  .info h1 {
+    font-size: 2.4rem;
+  }
+  .info i, .location-info i {
+    font-size: 3rem;
+  }
+  .info p {
+    width: 100%;
+    font-size: .9rem;
+  }
+  .cta .circle-logo {
+    height:125px;
+    width: 125px;
+    background-size: 75px 75px;
+  }
+  .location-info p {
+    width: 50%;
+    font-size: .9rem;
+  } 
+  .location-box {
+    flex-direction: column;
+  }
+}
+@media (max-width: 675px) {
+  .cta {
+    margin: 4%;
+  }
+  .top-greet {
+    height: 125px;
+  }
+  .top-greet h1 {
+    font-size: 2.15rem;
+  }
+  .top-greet i {
+    font-size: 1.75rem;
+  }
+  .top-greet p {
+    font-size: .8rem;
+  }
+  .info h1 {
+    font-size: 2.15rem;
+  }
+  .info i, .location-info i {
+    font-size: 2.5rem;
+  }
+  .info p {
+    font-size: .8rem;
+  }
+  .location-info p {
+    font-size: .8rem;
+  } 
+}
+@media (max-width: 600px) {
+  .top-greet h1 {
+    font-size: 1.85rem;
+  }
+  .top-greet hr {
+    margin: 1%;
+  }
+  .top-greet p {
+    padding-top:0;
+    font-size: .7rem;
+  }
+  .top-greet i {
+    font-size: 1.4rem;
+  }
+  .info h1 {
+    font-size: 1.85rem;
+  }
+  .cta .circle-logo {
+    height:100px;
+    width: 100px;
+    background-size: 65px 65px;
+  }
+}
+@media (max-width: 510px) {
+  .top-greet h1 {
+    font-size: 1.6rem;
+  }
+  .top-greet hr {
+    margin: 1%;
+  }
+  .top-greet p {
+    padding-top:0;
+    font-size: .7rem;
+  }
+  .top-greet i {
+    font-size: 1.4rem;
+  }
+  .info h1 {
+    font-size: 1.6rem;
+  }
+  .info p {
+    font-size: .75rem;
+  }
+  .location-info p {
+    font-size: .75rem;
+  } 
+  .cta .circle-logo {
+    height:100px;
+    width: 100px;
+    background-size: 65px 65px;
+  }
+  .location-info {
+    padding-top: 5%;
+  }
+  .btn {
+    margin-bottom: 10%;
+    margin-top: 4%;
+    padding: 8px 15px;
+    font-size: .7rem;
+  }
+}
+@media (max-width: 450px) {
+  .top-greet {
+    height: 10vh;
+  }
+  .top-greet h1, .top-greet hr, .top-greet p {
+    display:none;
+  }
+}

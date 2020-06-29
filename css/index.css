@@ -264,13 +264,15 @@ a {
     font-size: 4rem;
   }
 }
+@media (max-width: 1450px) {
+  .right .container img {
+    margin-top: 11%;
+  }
+}
 @media (max-width: 1240px) {
   .info-left p {
     width: 90%;
     font-size: 1rem;
-  }
-  .right .container img {
-    margin-top: 10%;
   }
   .left .fl {
     font-size: 3.5rem;
@@ -367,6 +369,9 @@ a {
   }
 }
 @media(max-width: 400px) {
+  .info-left i {
+    font-size: 4rem;
+  }
   .mobile-back {
     opacity: .1;
     right:0;
@@ -379,5 +384,11 @@ a {
   }
   .right .btn {
     right: 25px;
+  }
+  .two {
+    padding-bottom: 10%;
+  }
+  .landing-page .logo {
+    left: 5%;
   }
 }
