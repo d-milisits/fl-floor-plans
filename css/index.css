@@ -382,11 +382,12 @@ a {
   }
   .mobile-back {
     opacity: .0775;
+    top: 30%;
     right:-18%;
     transform: rotate(-35deg);
   }
   .left .fl {
-    font-size: 2.85rem;
+    font-size: 2.9rem;
     opacity:1;
   }
   .left h1, .left p, .left a {
