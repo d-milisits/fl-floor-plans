@@ -185,14 +185,14 @@
   .contact-page i {
     display:none;
   }
-  /* html, body, form {
-    height:100%;
-    width:100%;
-  } */
+  form {
+    width: 100%;
+  }
   .group-div {
+    height:100vh;
     padding-top:0;
     padding-bottom:0;
-    height: calc(100vh - 58px);
+    height: calc(var(--vh, 1vh) * 100);
   }
 }
 @media (max-width: 558px) {
