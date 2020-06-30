@@ -5,7 +5,8 @@
 }
 .contact-page {
   position:relative;
-  min-height:100vh;
+  height:100vh;
+  height: calc(var(--vh, 1vh) * 100);
   width:100vw;
   background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('../img/contactimg.jpg');
   background-size: cover;
