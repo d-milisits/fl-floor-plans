@@ -81,7 +81,7 @@
   .faded-layout {
     height: 60vh;
     width: 100%;
-    background-image: linear-gradient(to bottom right, #c7ecee, whitesmoke);
+    background-color: #dfe6e9;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
