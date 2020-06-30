@@ -60,7 +60,7 @@ a {
 }
 .left .fl {
   font-family: 'Montserrat';
-  font-weight: 800;
+  font-weight: 900;
   font-size: 5rem;
   text-transform: uppercase;
   color: #0abde3;
@@ -377,6 +377,15 @@ a {
   }
 }
 @media(max-width: 420px) {
+  html, body {
+    height:100%;
+    width:100%;
+  }
+  .landing-page {
+    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
+    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    min-height: fill-available;
+  }
   .info-left i {
     font-size: 4rem;
   }

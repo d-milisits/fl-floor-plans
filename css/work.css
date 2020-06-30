@@ -216,12 +216,28 @@
   border-radius: 10px;
 }
 /* MOBILE STYLING */
+@media (max-width: 1215px) {
+  .partner-right .para {
+    width: 60%;
+  }
+  .partner-right p {
+    font-size: 1.025rem;
+  }
+  .partner-right i {
+    font-size: 80px;
+  }
+}
 @media (max-width: 1080px) {
   .faded-layout .faded-two {
-    display:none;
+    /* display:none; */
+    height: 90%;
+    top: -10%;
+    right: -2.5%;
   }
   .faded-layout .faded-one {
-    left:0%;
+    height: 80%;
+    left:-2.5%;
+    bottom: -12.5%;
   }
   .faded-layout h1 {
     font-size: 3.5rem;
@@ -249,15 +265,6 @@
   .partner-left .five {
     height: 45px;
     width: 230px;
-  }
-  .partner-right .para {
-    width: 60%;
-  }
-  .partner-right p {
-    font-size: 1.025rem;
-  }
-  .partner-right i {
-    font-size: 80px;
   }
 }
 @media (max-width: 950px) {
@@ -306,6 +313,17 @@
   }
 }
 @media (max-width: 800px) {
+  .faded-layout .faded-two {
+    /* display:none; */
+    height: 80%;
+    top: -10%;
+    right: -5%;
+  }
+  .faded-layout .faded-one {
+    height: 70%;
+    left:-5%;
+    bottom: -15%;
+  }
   .partner-box {
     flex-direction: column;
   }
@@ -316,6 +334,15 @@
   }
 }
 @media (max-width: 600px) {
+  .faded-layout .faded-two {
+    /* display:none; */
+    top: -15%;
+    right: -7.5%;
+  }
+  .faded-layout .faded-one {
+    left:-7.5%;
+    bottom: -20%;
+  }
   .top-greet i {
     font-size: 1.4rem;
   }
@@ -340,6 +367,14 @@
   }
 }
 @media (max-width: 510px) {
+  .faded-layout .faded-two {
+    top: -20%;
+    right: -30%;
+  }
+  .faded-layout .faded-one {
+    left:-20%;
+    bottom: -20%;
+  }
   .top-greet i {
     font-size: 1.4rem;
   }
@@ -348,6 +383,7 @@
   }
   .faded-layout h1 {
     font-size: 1.85rem;
+    font-weight: 700;
   }
   .faded-layout p {
     padding-top: 1%;

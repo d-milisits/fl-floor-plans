@@ -120,7 +120,6 @@
       -moz-animation:inputHighlighter 0.3s ease;
       animation:inputHighlighter 0.3s ease;
     }
-
     /* ANIMATIONS ================ */
     @-webkit-keyframes inputHighlighter {
       from { background:#2c3e50; }
@@ -185,11 +184,16 @@
   .contact-page i {
     display:none;
   }
+  html, body, form {
+    height:100%;
+    width:100%;
+  }
   .group-div {
     padding-top:0;
     padding-bottom:0;
-    height: 100vh;
-    width: 100vw;
+    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
+    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    min-height: fill-available;
   }
 }
 @media (max-width: 558px) {

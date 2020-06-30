@@ -88,7 +88,7 @@ a {
 }
 .info h1 {
   font-family: 'Montserrat';
-  font-weight: 800;
+  font-weight: 700;
   font-size: 3rem;
   text-transform: uppercase;
   color: #2c3e50;
@@ -413,5 +413,8 @@ a {
   }
   .top-greet h1, .top-greet hr, .top-greet p {
     display:none;
+  }
+  .cta {
+    margin-bottom: 5.5%;
   }
 }
