@@ -13,29 +13,31 @@
   <body>
     <div class="contact-page">
       <a href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
-      <div class="group-div">
-        <h1>Get in touch!</h1>
-        <p>You will hear back shortly.</p>
-        <div class="group one">      
-          <input id="name" name="name" type="text" autocomplete="off" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>* Name</label>
+      <form action="https://formspree.io/danthedev9557@gmail.com" method="POST"> 
+        <div class="group-div">
+          <h1>Get in touch!</h1>
+          <p>You will hear back shortly.</p>
+          <div class="group one">      
+            <input id="name" name="name" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>* Name</label>
+          </div>
+          <div class="group two">      
+            <input id="email" name="email" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>* E-Mail</label>
+          </div>
+          <div class="group three">      
+            <input id="message" name="message" type="text" autocomplete="off" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>* Message</label>
+          </div>
+          <button class="btn animate__animated animate__flipInX">Send Message</button>
         </div>
-        <div class="group two">      
-          <input id="email" name="email" type="text" autocomplete="off" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>* E-Mail</label>
-        </div>
-        <div class="group three">      
-          <input id="message" name="message" type="text" autocomplete="off" required>
-          <span class="highlight"></span>
-          <span class="bar"></span>
-          <label>* Message</label>
-        </div>
-        <a href="#" class="btn animate__animated animate__flipInX">Send Message</a>
-      </div>
+      </form>
     </div>
   </body>
 </html>

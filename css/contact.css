@@ -168,6 +168,7 @@
   text-decoration: none;
   text-transform: uppercase;
   border: 1px solid #0abde3;
+  cursor:pointer;
 }
 .btn:hover {
   transition: .25s all ease;
