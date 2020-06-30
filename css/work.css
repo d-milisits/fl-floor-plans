@@ -100,6 +100,13 @@
       transform: rotate(25deg);
       z-index:100;
   }
+  .faded-layout .faded-one {
+    left:5%;
+  }
+  .faded-layout .faded-two {
+    height: 150%;
+    right:0;
+  }
   .faded-layout h1 {
     font-size: 4rem;
     z-index: 200;
@@ -210,6 +217,12 @@
 }
 /* MOBILE STYLING */
 @media (max-width: 1080px) {
+  .faded-layout .faded-two {
+    display:none;
+  }
+  .faded-layout .faded-one {
+    left:0%;
+  }
   .faded-layout h1 {
     font-size: 3.5rem;
   }

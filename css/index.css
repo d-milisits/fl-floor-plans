@@ -66,6 +66,7 @@ a {
   color: #0abde3;
   letter-spacing: -1.5px;
   animation-delay: .75s;
+  z-index: 5000;
 }
 .left h1, .left p, .left a {
   margin-left: 75px;
@@ -311,9 +312,10 @@ a {
 }
 @media (max-width: 1000px) {
   .left {
-    flex:5;
+    flex:10;
   }
   .right {
+    flex:.5;
     background-color: #dfe6e9;
   }
   .right img {
@@ -379,11 +381,13 @@ a {
     font-size: 4rem;
   }
   .mobile-back {
-    opacity: .1;
-    right:0;
+    opacity: .0775;
+    right:-18%;
+    transform: rotate(-35deg);
   }
   .left .fl {
     font-size: 2.85rem;
+    opacity:1;
   }
   .left h1, .left p, .left a {
     margin-left: 22.5px;
