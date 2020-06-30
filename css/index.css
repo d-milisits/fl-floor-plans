@@ -142,6 +142,7 @@ a {
   padding: 10px 20px;
   margin-top: 30px;
   letter-spacing: 2px;
+  z-index: 5000;
 }
 .btn:hover {
   transition: .2s all ease;
@@ -257,6 +258,11 @@ a {
   position: absolute;
   top: 25%;
   right: 10%;
+}
+@media (min-width: 2000px) {
+  .left .fl {
+    font-size: 6rem;
+  }
 }
 /* MOBILE STYLING */
 @media (max-width: 1600px) {
