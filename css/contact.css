@@ -6,7 +6,7 @@
 .contact-page {
   position:relative;
   height:100vh;
-  height:calc(var(--vh, 1vh) * 100);
+  height:calc(var(--vh, 1vh) * 100);  
   width:100vw;
   background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('../img/contactimg.jpg');
   background-size: cover;
@@ -180,27 +180,23 @@
 }
 /* MOBILE STYLING */
 @media (max-width: 790px) {
+  html,body,form {
+    height:100%;
+    width:100%;
+  }
   .contact-page {
     background-image: none;
-    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
+    /* min-height: -moz-available; /* WebKit-based browsers will ignore this. */
     min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    min-height: fill-available;
+    min-height: fill-available; */
   }
   .contact-page i {
     display:none;
   }
-  html, body, form {
-    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
-    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    min-height: fill-available;    
-    width:100%;
-  }
   .group-div {
     padding-top:0;
     padding-bottom:0;
-    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
-    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
-    min-height: fill-available;
+    height:calc(var(--vh, 1vh) * 100);
   }
 }
 @media (max-width: 558px) {
