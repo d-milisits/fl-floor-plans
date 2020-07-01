@@ -182,17 +182,24 @@
 @media (max-width: 790px) {
   .contact-page {
     background-image: none;
+    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
+    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    min-height: fill-available;
   }
   .contact-page i {
     display:none;
   }
-  body, html, .contact-page, form {
+  html, body {
+    height:100%;
     width:100%;
   }
   .group-div {
     padding-top:0;
     padding-bottom:0;
     height:calc(var(--vh, 1vh) * 100);
+    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
+    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    min-height: fill-available;
   }
 }
 @media (max-width: 558px) {
