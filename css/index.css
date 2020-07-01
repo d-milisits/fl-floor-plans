@@ -49,7 +49,7 @@ a {
 }
 .left, .right {
   flex:1;
-  height:calc(var(--vh, 1vh) * 100);
+  /* height:calc(var(--vh, 1vh) * 100); */
 }
 /* LEFT STYLING */
 .left {
@@ -378,15 +378,15 @@ a {
   }
 }
 @media(max-width: 420px) {
-  html, body {
+  /* html, body {
     height:100%;
     width:100%;
   }
   .landing-page {
-    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
-    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    min-height: -moz-available; 
+    min-height: -webkit-fill-available; 
     min-height: fill-available;
-  }
+  } */
   .info-left i {
     font-size: 4rem;
   }
