@@ -3,6 +3,9 @@
   margin:0;
   font-family: 'Montserrat';
 }
+body {
+  overflow-x:hidden;
+}
 :root {
     --crsl-bg: transparent;
     --box-bg: #B5C6CE;
