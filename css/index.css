@@ -66,8 +66,7 @@ a {
   text-transform: uppercase;
   color: #0abde3;
   letter-spacing: -1.5px;
-  animation-delay: .25s;
-  animation-duration: 555ms;
+  animation-delay: .5s;
   z-index: 5000;
 }
 .left h1, .left p, .left a {
@@ -82,7 +81,6 @@ a {
   color: #2c3e50;
   opacity:.8;
   width: 70%;
-  animation-delay: .45s;
   animation-duration: 555ms;
 }
 /* RIGHT STYLING */
@@ -146,8 +144,7 @@ a {
   margin-top: 30px;
   letter-spacing: 2px;
   z-index: 5000;
-  animation-delay: .8s;
-  animation-duration: 600ms;
+  /* animation-duration: 600ms; */
 }
 .btn:hover {
   transition: .2s all ease;
