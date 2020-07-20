@@ -66,7 +66,8 @@ a {
   text-transform: uppercase;
   color: #0abde3;
   letter-spacing: -1.5px;
-  animation-delay: .75s;
+  animation-delay: .25s;
+  animation-duration: 555ms;
   z-index: 5000;
 }
 .left h1, .left p, .left a {
@@ -81,6 +82,8 @@ a {
   color: #2c3e50;
   opacity:.8;
   width: 70%;
+  animation-delay: .45s;
+  animation-duration: 555ms;
 }
 /* RIGHT STYLING */
 .right {
@@ -93,8 +96,6 @@ a {
   position: absolute;
   top: 20px;
   right: 60px;
-}
-.right .btn {
   background-color: #2c3e50;
   color: white;
   border-color: #2c3e50;
@@ -145,6 +146,8 @@ a {
   margin-top: 30px;
   letter-spacing: 2px;
   z-index: 5000;
+  animation-delay: .8s;
+  animation-duration: 600ms;
 }
 .btn:hover {
   transition: .2s all ease;
@@ -354,6 +357,10 @@ a {
   .landing-page .logo {
     height: 45px;
     width: 45px;
+  }
+  .left .fl {
+    line-height: 2.75rem;
+    margin-bottom:12.5px;
   }
 }
 @media (max-width: 550px) {
